@@ -1,0 +1,19 @@
+[package]
+name = "convert-params"
+authors = ["Marko Bencun <m+crates@mben.ch>"]
+repository = "https://github.com/benma/convert-params/"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A macro to replace function parameters types and convert them to the original type using TryFrom"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0", features = ["full"] }
+quote = "1.0"
+
+[dev-dependencies]
+proc-macro2 = "1.0"
+trybuild = "1.0.80"
